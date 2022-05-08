@@ -24,32 +24,39 @@ endif
 " #############################################################################
 " # Gruvbox theme
 if get(g:, 'colors_name', 'default') == 'gruvbox'
-  source ~/.vim/conf/gruvbox-conf.vim
+  exe 'source' conf_dir . 'gruvbox-conf.vim'
 endif
 
 " #############################################################################
 " # Autocomplete-flow
 if ( exists( 'g:loaded_autocomplete_flow' ) && g:loaded_autocomplete_flow )
-  source ~/.vim/conf/autocomplete-flow-conf.vim
+  exe 'source' conf_dir . 'autocomplete-flow-conf.vim'
 endif
 
 " #############################################################################
 " # Lightline
 if ( exists( 'g:loaded_lightline' ) && g:loaded_lightline )
-  source ~/.vim/conf/lightline-conf.vim
+  exe 'source' conf_dir . 'lightline-conf.vim'
 endif
 
 " #############################################################################
 " # Vim-keeppad
 if ( exists( 'g:loaded_keeppad' ) && g:loaded_keeppad )
-  source ~/.vim/conf/vim-keeppad-conf.vim
+  exe 'source' conf_dir . 'vim-keeppad-conf.vim'
 endif
 
 " #############################################################################
 " # fzf
-if ( exists( 'g:loaded_keeppad' ) && g:loaded_keeppad )
-  source ~/.vim/conf/fzf-conf.vim
+if ( exists( 'g:loaded_fzf_vim' ) && g:loaded_fzf_vim )
+  exe 'source' conf_dir . 'fzf-conf.vim'
 endif
+
+" #############################################################################
+" # GitGutter
+if ( exists( 'g:loaded_gitgutter' ) && g:loaded_gitgutter )
+  exe 'source' conf_dir . 'gitgutter-conf.vim'
+endif
+
 endfunction
 
 au VimEnter * call s:configurePlugins()
