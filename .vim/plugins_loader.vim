@@ -7,9 +7,6 @@ call plug#begin('~/.vim/plugged')
 "Plug 'SirVer/ultisnips'
 "Plug 'honza/vim-snippets'
 
-" ## Autocomplete-flow
- Plug 'wokalski/autocomplete-flow'
-
 " ## vim gitgutter
 Plug 'airblade/vim-gitgutter'
 
@@ -110,6 +107,9 @@ else
 endif
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
+
+" ## Autocomplete-flow (for deoplete)
+ Plug 'wokalski/autocomplete-flow'
 
 " ## Wombat
 Plug 'gryf/wombat256grf'

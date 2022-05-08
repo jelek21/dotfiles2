@@ -1,0 +1,6 @@
+[user]
+	email = jerome.lekieffre@yahoo.fr
+	name = jelek21
+
+[core]
+	pager = diff-so-fancy | less -FXRi

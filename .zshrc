@@ -85,6 +85,7 @@ plugins=(
   git
   gitfast
   git-extras
+  git-smart-commands
   jsontools
   man
   sudo
@@ -92,6 +93,7 @@ plugins=(
   web-search
   zsh-autosuggestions
   zsh-completions
+  zsh-diff-so-fancy
   zsh-syntax-highlighting
 )
 
