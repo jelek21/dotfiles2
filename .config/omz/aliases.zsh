@@ -14,7 +14,7 @@ alias e='export'
 alias :q='exit'
 
 # git command for the dotfiles git repo
-a config='/usr/bin/git --git-dir=$HOME/$DOT_FILES_GIT_DIR/ --work-tree=$HOME'
+a config='/usr/bin/git --git-dir=$DOT_FILES_GIT_DIR/ --work-tree=$HOME'
 
 #list
 a ls='ls --color=auto'
