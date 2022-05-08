@@ -1,3 +1,12 @@
+"#----------------------------------------||-----------------------------------#
+"#          _      _      _    ___  __    ||                                   #
+"#         | |    | |    | |  |__ \/_ |   || File:                             #
+"#         | | ___| | ___| | __  ) || |   ||    $HOME/.vim/plugins.vim         #
+"#     _   | |/ _ \ |/ _ \ |/ / / / | |   ||                                   #
+"#    | |__| |  __/ |  __/   < / /_ | |   || Sources configuration files for   #
+"#     \____/ \___|_|\___|_|\_\____||_|   || every vim plugins                 #
+"#________________________________________||___________________________________#
+
 " ########
 " # LOAD #
 " ########
@@ -56,6 +65,31 @@ endif
 if ( exists( 'g:loaded_gitgutter' ) && g:loaded_gitgutter )
   exe 'source' conf_dir . 'gitgutter-conf.vim'
 endif
+
+" #############################################################################
+" # emmet
+if ( exists( 'g:loaded_emmet_vim' ) && g:loaded_emmet_vim )
+  exe 'source' conf_dir . 'emmet-conf.vim'
+endif
+
+" #############################################################################
+" # NERDTree
+if ( exists( 'loaded_nerd_tree' ) && loaded_nerd_tree )
+  exe 'source' conf_dir . 'nerdTree-conf.vim'
+endif
+
+" #############################################################################
+" # vim-mutliple-cursor
+if ( filereadable(expand("~/vim/plugged/vim-multiple-cursor/plugin/multiple_cursor.vim")))
+  exe 'source' conf_dir . 'vim-multiple-cursor-conf.vim'
+endif
+
+" #############################################################################
+" # ALE
+if ( exists( 'g:loaded_ale_dont_use_this_in_other_plugins_please' ) && g:loaded_ale_dont_use_this_in_other_plugins_please )
+  exe 'source' conf_dir . 'ale-conf.vim'
+endif
+
 
 endfunction
 

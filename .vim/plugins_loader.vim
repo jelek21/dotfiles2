@@ -1,3 +1,12 @@
+" #----------------------------------------||-----------------------------------#
+" #          _      _      _    ___  __    ||                                   #
+" #         | |    | |    | |  |__ \/_ |   || File:                             #
+" #         | | ___| | ___| | __  ) || |   ||   $HOME/.vim/plugins_loader.vim   #
+" #     _   | |/ _ \ |/ _ \ |/ / / / | |   ||                                   #
+" #    | |__| |  __/ |  __/   < / /_ | |   ||   Plug config to load all vim     #
+" #     \____/ \___|_|\___|_|\_\____||_|   ||   plugins                         #
+" #________________________________________||___________________________________#
+
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
@@ -9,9 +18,6 @@ call plug#begin('~/.vim/plugged')
 
 " ## vim gitgutter
 Plug 'airblade/vim-gitgutter'
-
-" ## editorconfig
-Plug 'editorconfig/editorconfig-vim'
 
 " ## vim keeppad
 Plug 'haya14busa/vim-keeppad'
@@ -25,11 +31,9 @@ Plug 'junegunn/fzf', {
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 
-" ## yowish
-Plug 'KabbAmine/yowish.vim'
 
 " ## emmet
-Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim', { 'for': ['css', 'html', 'php', 'htm', 'json', 'js'] }
 
 " ## NerdTree
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -44,8 +48,6 @@ Plug 'w0rp/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" ## Nord theme
-Plug 'arcticicestudio/nord-vim'
 
 " ## Vim-scripts
 Plug 'f1reflyyyylmao/Conque-GDB'
@@ -56,29 +58,25 @@ Plug 'vim-scripts/Toggle'
 Plug 'vim-scripts/nextval'
 Plug 'vim-scripts/phpfolding.vim'
 Plug 'vim-scripts/DoxyGen-Syntax'
-Plug 'vim-scripts/dante.vim'
-Plug 'vim-scripts/gtk-vim-syntax'
 Plug 'vim-scripts/vim-svngutter'
 Plug 'vim-scripts/SearchComplete'
 Plug 'vim-scripts/The-NERD-tree'
-Plug 'vim-scripts/asu1dark.vim'
 Plug 'vim-scripts/JavaScript-Indent'
 Plug 'vim-scripts/EnhancedJumps'
 Plug 'vim-scripts/Cpp11-Syntax-Support'
-Plug 'vim-scripts/desert-warm-256'
 Plug 'vim-scripts/cSyntaxAfter'
 Plug 'vim-scripts/Indent-Finder'
 Plug 'vim-scripts/Gundo'
 Plug 'vim-scripts/mycomment'
 Plug 'vim-scripts/grep.vim'
-Plug 'vim-scripts/c.vim'
+Plug 'vim-scripts/c.vim', {'for': 'C/C++'}
 Plug 'vim-scripts/DoxygenToolkit.vim'
 
 " ## Node
 Plug 'moll/vim-node'
 
 " ## CPP
-Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'octol/vim-cpp-enhanced-highlight', {'for': 'C/C++'}
 
 " Neoformat
 Plug 'sbdchd/neoformat'
@@ -87,9 +85,6 @@ Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
-
-" ## ThemeInABox
-Plug 'kracejic/themeinabox.vim'
 
 " ## Polyglot
 Plug 'sheerun/vim-polyglot'
@@ -111,6 +106,9 @@ Plug 'Shougo/neosnippet-snippets'
 " ## Autocomplete-flow (for deoplete)
  Plug 'wokalski/autocomplete-flow'
 
+" #Themes
+" ## yowish
+Plug 'KabbAmine/yowish.vim'
 " ## Wombat
 Plug 'gryf/wombat256grf'
 " ## Moonlight
@@ -127,5 +125,15 @@ Plug 'tomasr/molokai'
 Plug 'sjl/badwolf'
 " ## Gruvbox
 Plug 'morhetz/gruvbox'
+" ## ThemeInABox
+Plug 'kracejic/themeinabox.vim'
+" Desert vim-script
+Plug 'vim-scripts/desert-warm-256'
+" asu1dark vim-script
+Plug 'vim-scripts/asu1dark.vim'
+Plug 'vim-scripts/dante.vim'
+" ## Nord theme
+Plug 'arcticicestudio/nord-vim'
+
 " Initialize plugin system
 call plug#end()

@@ -1,3 +1,12 @@
+#----------------------------------------||-----------------------------------#
+#          _      _      _    ___  __    ||                                   #
+#         | |    | |    | |  |__ \/_ |   || File: $HOME/.zshrc                #
+#         | | ___| | ___| | __  ) || |   ||                                   #
+#     _   | |/ _ \ |/ _ \ |/ / / / | |   ||                                   #
+#    | |__| |  __/ |  __/   < / /_ | |   ||                                   #
+#     \____/ \___|_|\___|_|\_\____||_|   ||                                   #
+#________________________________________||___________________________________#
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin/:/usr/local/bin:$HOME/tools/:$PATH
 
@@ -166,12 +175,8 @@ ex ()
   fi
 }
 
-#create a file called .zshrc-personal and put all your personal aliases
-#in there. They will not be overwritten by skel.
-
-[[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
+# Enable FZF if installed
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 neofetch
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 colorscript random
