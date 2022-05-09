@@ -31,9 +31,16 @@ if ( exists( 'g:loaded_airline' ) && g:loaded_airline )
 endif
 
 " #############################################################################
-" # Gruvbox theme
-if get(g:, 'colors_name', 'default') == 'gruvbox'
-  exe 'source' conf_dir . 'gruvbox-conf.vim'
+" # Airline-themes
+if ( exists( 'g:loaded_airline_themes' ) && g:loaded_airline_themes )
+  exe 'source' conf_dir . 'airline-themes-conf.vim'
+  :AirlineSymbols powerline
+endif
+
+" #############################################################################
+" # ALE
+if ( exists( 'g:loaded_ale_dont_use_this_in_other_plugins_please' ) && g:loaded_ale_dont_use_this_in_other_plugins_please )
+  exe 'source' conf_dir . 'ale-conf.vim'
 endif
 
 " #############################################################################
@@ -43,15 +50,15 @@ if ( exists( 'g:loaded_autocomplete_flow' ) && g:loaded_autocomplete_flow )
 endif
 
 " #############################################################################
-" # Lightline
-if ( exists( 'g:loaded_lightline' ) && g:loaded_lightline )
-  exe 'source' conf_dir . 'lightline-conf.vim'
+" # Conque-GDB
+if ( exists( 'g:plugin_conque_gdb_loaded' ) && g:plugin_conque_gdb_loaded )
+  exe 'source' conf_dir . 'conque-gdb-conf.vim'
 endif
 
 " #############################################################################
-" # Vim-keeppad
-if ( exists( 'g:loaded_keeppad' ) && g:loaded_keeppad )
-  exe 'source' conf_dir . 'vim-keeppad-conf.vim'
+" # emmet
+if ( exists( 'g:loaded_emmet_vim' ) && g:loaded_emmet_vim )
+  exe 'source' conf_dir . 'emmet-conf.vim'
 endif
 
 " #############################################################################
@@ -67,9 +74,15 @@ if ( exists( 'g:loaded_gitgutter' ) && g:loaded_gitgutter )
 endif
 
 " #############################################################################
-" # emmet
-if ( exists( 'g:loaded_emmet_vim' ) && g:loaded_emmet_vim )
-  exe 'source' conf_dir . 'emmet-conf.vim'
+" # Gruvbox theme
+if get(g:, 'colors_name', 'default') == 'gruvbox'
+  exe 'source' conf_dir . 'gruvbox-conf.vim'
+endif
+
+" #############################################################################
+" # Lightline
+if ( exists( 'g:loaded_lightline' ) && g:loaded_lightline )
+  exe 'source' conf_dir . 'lightline-conf.vim'
 endif
 
 " #############################################################################
@@ -79,15 +92,15 @@ if ( exists( 'loaded_nerd_tree' ) && loaded_nerd_tree )
 endif
 
 " #############################################################################
-" # vim-mutliple-cursor
-if ( filereadable(expand("~/vim/plugged/vim-multiple-cursor/plugin/multiple_cursor.vim")))
-  exe 'source' conf_dir . 'vim-multiple-cursor-conf.vim'
+" # Vim-keeppad
+if ( exists( 'g:loaded_keeppad' ) && g:loaded_keeppad )
+  exe 'source' conf_dir . 'vim-keeppad-conf.vim'
 endif
 
 " #############################################################################
-" # ALE
-if ( exists( 'g:loaded_ale_dont_use_this_in_other_plugins_please' ) && g:loaded_ale_dont_use_this_in_other_plugins_please )
-  exe 'source' conf_dir . 'ale-conf.vim'
+" # vim-mutliple-cursor
+if ( filereadable(expand("~/vim/plugged/vim-multiple-cursor/plugin/multiple_cursor.vim")))
+  exe 'source' conf_dir . 'vim-multiple-cursor-conf.vim'
 endif
 
 
