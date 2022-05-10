@@ -51,7 +51,6 @@ Plug 'vim-airline/vim-airline-themes'
 
 " ## Vim-scripts
 Plug 'f1reflyyyylmao/Conque-GDB'
-Plug 'vim-scripts/vcscommand.vim'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'vim-scripts/copypath.vim'
 Plug 'vim-scripts/Toggle'

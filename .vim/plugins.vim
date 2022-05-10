@@ -56,6 +56,13 @@ if ( exists( 'g:plugin_conque_gdb_loaded' ) && g:plugin_conque_gdb_loaded )
 endif
 
 " #############################################################################
+" # Doxygen Toolkit
+if ( exists( 'loaded_DoxygenToolkit' ) && loaded_DoxygenToolkit )
+  exe 'source' conf_dir . 'doxygenToolkit-conf.vim'
+endif
+
+
+" #############################################################################
 " # emmet
 if ( exists( 'g:loaded_emmet_vim' ) && g:loaded_emmet_vim )
   exe 'source' conf_dir . 'emmet-conf.vim'
