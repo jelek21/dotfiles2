@@ -25,8 +25,7 @@ Plug 'haya14busa/vim-keeppad'
 " ## Junegunn
 Plug 'junegunn/fzf', {
       \ 'dir': '~/.fzf',
-      \ 'do': './install --all'
-      \ }
+      \ 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 
@@ -49,8 +48,8 @@ Plug 'vim-airline/vim-airline-themes'
 
 
 " ## Vim-scripts
-Plug 'f1reflyyyylmao/Conque-GDB' {'for': ['C/C++']}
-Plug 'vim-scripts/DoxygenToolkit.vim' { 'for': ['C/C++', 'java', 'python']}
+Plug 'f1reflyyyylmao/Conque-GDB', {'for': ['C/C++'] }
+Plug 'vim-scripts/DoxygenToolkit.vim', { 'for': ['C/C++', 'java', 'python'] }
 Plug 'vim-scripts/copypath.vim'
 Plug 'vim-scripts/Toggle'
 Plug 'vim-scripts/nextval'
@@ -66,13 +65,13 @@ Plug 'vim-scripts/Indent-Finder'
 Plug 'vim-scripts/Gundo'
 Plug 'vim-scripts/mycomment'
 Plug 'vim-scripts/grep.vim'
-Plug 'vim-scripts/c.vim', {'for': 'C/C++'}
+Plug 'vim-scripts/c.vim', { 'for': 'C/C++' }
 
 " ## Node
 Plug 'moll/vim-node'
 
 " ## CPP
-Plug 'octol/vim-cpp-enhanced-highlight', {'for': 'C/C++'}
+Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'C/C++' }
 
 " Neoformat
 Plug 'sbdchd/neoformat'
