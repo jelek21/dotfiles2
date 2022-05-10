@@ -27,7 +27,6 @@ Plug 'junegunn/fzf', {
       \ 'dir': '~/.fzf',
       \ 'do': './install --all'
       \ }
-
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 
@@ -50,8 +49,8 @@ Plug 'vim-airline/vim-airline-themes'
 
 
 " ## Vim-scripts
-Plug 'f1reflyyyylmao/Conque-GDB'
-Plug 'vim-scripts/DoxygenToolkit.vim'
+Plug 'f1reflyyyylmao/Conque-GDB' {'for': ['C/C++']}
+Plug 'vim-scripts/DoxygenToolkit.vim' { 'for': ['C/C++', 'java', 'python']}
 Plug 'vim-scripts/copypath.vim'
 Plug 'vim-scripts/Toggle'
 Plug 'vim-scripts/nextval'
@@ -59,7 +58,6 @@ Plug 'vim-scripts/phpfolding.vim'
 Plug 'vim-scripts/DoxyGen-Syntax'
 Plug 'vim-scripts/vim-svngutter'
 Plug 'vim-scripts/SearchComplete'
-Plug 'vim-scripts/The-NERD-tree'
 Plug 'vim-scripts/JavaScript-Indent'
 Plug 'vim-scripts/EnhancedJumps'
 Plug 'vim-scripts/Cpp11-Syntax-Support'
@@ -69,7 +67,6 @@ Plug 'vim-scripts/Gundo'
 Plug 'vim-scripts/mycomment'
 Plug 'vim-scripts/grep.vim'
 Plug 'vim-scripts/c.vim', {'for': 'C/C++'}
-Plug 'vim-scripts/DoxygenToolkit.vim'
 
 " ## Node
 Plug 'moll/vim-node'

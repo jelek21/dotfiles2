@@ -56,11 +56,18 @@ if ( exists( 'g:plugin_conque_gdb_loaded' ) && g:plugin_conque_gdb_loaded )
 endif
 
 " #############################################################################
+" # copypath
+if ( exists( 'g:loaded_copypath' ) && g:loaded_copypath )
+  " set this option value to 1 then, copy file path and name to unnamed
+  " register too.
+  let g:copypath_copy_to_unnamed_register = 0
+endif
+
+" #############################################################################
 " # Doxygen Toolkit
 if ( exists( 'loaded_DoxygenToolkit' ) && loaded_DoxygenToolkit )
   exe 'source' conf_dir . 'doxygenToolkit-conf.vim'
 endif
-
 
 " #############################################################################
 " # emmet
