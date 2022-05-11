@@ -57,12 +57,11 @@ Plug 'vim-scripts/phpfolding.vim'
 Plug 'vim-scripts/DoxyGen-Syntax'
 Plug 'vim-scripts/vim-svngutter'
 Plug 'vim-scripts/SearchComplete'
-Plug 'vim-scripts/JavaScript-Indent'
-Plug 'vim-scripts/EnhancedJumps'
-Plug 'vim-scripts/Cpp11-Syntax-Support'
-Plug 'vim-scripts/cSyntaxAfter'
-Plug 'vim-scripts/Indent-Finder'
-Plug 'vim-scripts/Gundo'
+Plug 'vim-scripts/JavaScript-Indent', { 'for': ['javascript']}
+Plug 'vim-scripts/Cpp11-Syntax-Support', {'for': ['C++']}
+Plug 'vim-scripts/cSyntaxAfter', {'for': ['C/C++', 'java', 'php']}
+Plug 'vim-scripts/Indent-Finder', { 'do': 'python22 setup.py install' }
+Plug 'sjl/gundo.vim', {'on': ['GundoToggle', 'GundoHide', 'GundoShow', 'GundoRenderGraph']}
 Plug 'vim-scripts/mycomment'
 Plug 'vim-scripts/grep.vim'
 Plug 'vim-scripts/c.vim', { 'for': 'C/C++' }

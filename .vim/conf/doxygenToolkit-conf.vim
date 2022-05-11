@@ -43,7 +43,7 @@ let g:DoxygenToolkit_commentType = "C"
 
 "MIT Licence:
 if (s:license_type == "MIT")
-  let s:license = "Copyright (c) " . strftime('%Y)
+  let s:license = "Copyright (c) " . strftime('%Y')
   let s:license = s:license . " "
   let s:license = s:license . s:license_author
   let s:license = s:license . "\<enter>\<enter>"
@@ -62,8 +62,8 @@ if (s:license_type == "MIT")
   let s:license = s:license . "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\<enter>"
   let s:license = s:license . "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\<enter>"
   let s:license = s:license . "SOFTWARE.\<enter>"
+  let g:DoxygenToolkit_licenseTag = s:license
 endif
-let g:DoxygenToolkit_licenseTag = s:license
 
 " Compact documentation
 " /**

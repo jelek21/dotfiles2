@@ -140,7 +140,7 @@ let NERDTreeRespectWildIgnore = 0
 
 " This is where bookmarks are saved. See |NERDTreeBookmarkCommands|.
 " Default: $HOME/.NERDTreeBookmarks
-let NERDTreeBookmarksFile = $HOME/.NERDTreeBookmarks
+let NERDTreeBookmarksFile = '$HOME/.NERDTreeBookmarks'
 
 " This setting controls the method by which the list of user bookmarks is
 " sorted. When sorted, bookmarks will render in alphabetical order by name.
@@ -377,8 +377,8 @@ let NERDTreeAutoDeleteBuffer = 'silent'
 " arrows and the single space that follows them, shifting the entire tree two
 " character positions to the left.
 " Defaults:   Windows: ~ and + Others: ▾ and ▸
-let NERDTreeDirArrowCollapsible = ▾
-let NERDTreeDirArrowExpandable = ▸
+let NERDTreeDirArrowCollapsible = '▾'
+let NERDTreeDirArrowExpandable = '▸'
 
 " This character is used to separate the file or directory name from the rest
 " of the characters in the line of text. It allows filenames to contain special

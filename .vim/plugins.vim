@@ -17,108 +17,84 @@ source ~/.vim/plugins_loader.vim
 " # CONFIG FILES #
 " ################
 " Load each plugin's configuration file
+let s:conf_dir = $HOME . '/.vim/conf/'
 
 
 function! s:configurePlugins()
 
-  let conf_dir = $HOME . '/.vim/conf/'
-
 " #############################################################################
 " # Airline
-if ( exists( 'g:loaded_airline' ) && g:loaded_airline )
-  exe 'source' conf_dir . 'airline-conf.vim'
-  :AirlineSymbols powerline
-endif
+exe 'source' s:conf_dir . 'airline-conf.vim'
+:AirlineSymbols powerline
 
 " #############################################################################
 " # Airline-themes
-if ( exists( 'g:loaded_airline_themes' ) && g:loaded_airline_themes )
-  exe 'source' conf_dir . 'airline-themes-conf.vim'
-  :AirlineSymbols powerline
-endif
+exe 'source' s:conf_dir . 'airline-themes-conf.vim'
 
 " #############################################################################
 " # ALE
-if ( exists( 'g:loaded_ale_dont_use_this_in_other_plugins_please' ) && g:loaded_ale_dont_use_this_in_other_plugins_please )
-  exe 'source' conf_dir . 'ale-conf.vim'
-endif
+exe 'source' s:conf_dir . 'ale-conf.vim'
 
 " #############################################################################
 " # Autocomplete-flow
-if ( exists( 'g:loaded_autocomplete_flow' ) && g:loaded_autocomplete_flow )
-  exe 'source' conf_dir . 'autocomplete-flow-conf.vim'
-endif
+exe 'source' s:conf_dir . 'autocomplete-flow-conf.vim'
 
 " #############################################################################
 " # Conque-GDB
-if ( exists( 'g:plugin_conque_gdb_loaded' ) && g:plugin_conque_gdb_loaded )
-  exe 'source' conf_dir . 'conque-gdb-conf.vim'
-endif
+exe 'source' s:conf_dir . 'conque-gdb-conf.vim'
 
 " #############################################################################
 " # copypath
-if ( exists( 'g:loaded_copypath' ) && g:loaded_copypath )
-  " set this option value to 1 then, copy file path and name to unnamed
-  " register too.
-  let g:copypath_copy_to_unnamed_register = 0
-endif
+" set this option value to 1 then, copy file path and name to unnamed
+" register too.
+let g:copypath_copy_to_unnamed_register = 0
 
 " #############################################################################
 " # Doxygen Toolkit
-if ( exists( 'loaded_DoxygenToolkit' ) && loaded_DoxygenToolkit )
-  exe 'source' conf_dir . 'doxygenToolkit-conf.vim'
-endif
+exe 'source' s:conf_dir . 'doxygenToolkit-conf.vim'
 
 " #############################################################################
 " # emmet
-if ( exists( 'g:loaded_emmet_vim' ) && g:loaded_emmet_vim )
-  exe 'source' conf_dir . 'emmet-conf.vim'
-endif
+exe 'source' s:conf_dir . 'emmet-conf.vim'
 
 " #############################################################################
 " # fzf
-if ( exists( 'g:loaded_fzf_vim' ) && g:loaded_fzf_vim )
-  exe 'source' conf_dir . 'fzf-conf.vim'
-endif
+exe 'source' s:conf_dir . 'fzf-conf.vim'
 
 " #############################################################################
 " # GitGutter
-if ( exists( 'g:loaded_gitgutter' ) && g:loaded_gitgutter )
-  exe 'source' conf_dir . 'gitgutter-conf.vim'
-endif
+exe 'source' s:conf_dir . 'gitgutter-conf.vim'
 
 " #############################################################################
 " # Gruvbox theme
 if get(g:, 'colors_name', 'default') == 'gruvbox'
-  exe 'source' conf_dir . 'gruvbox-conf.vim'
+  exe 'source' s:conf_dir . 'gruvbox-conf.vim'
 endif
 
 " #############################################################################
-" # Lightline
-if ( exists( 'g:loaded_lightline' ) && g:loaded_lightline )
-  exe 'source' conf_dir . 'lightline-conf.vim'
-endif
+" # Gundo
+exe 'source' s:conf_dir . 'gundo-conf.vim'
 
 " #############################################################################
 " # NERDTree
-if ( exists( 'loaded_nerd_tree' ) && loaded_nerd_tree )
-  exe 'source' conf_dir . 'nerdTree-conf.vim'
-endif
+exe 'source' s:conf_dir . 'nerdTree-conf.vim'
+
+" #############################################################################
+" # svnGutter
+exe 'source' s:conf_dir . 'svngutter-conf.vim'
 
 " #############################################################################
 " # Vim-keeppad
-if ( exists( 'g:loaded_keeppad' ) && g:loaded_keeppad )
-  exe 'source' conf_dir . 'vim-keeppad-conf.vim'
-endif
+exe 'source' s:conf_dir . 'vim-keeppad-conf.vim'
 
 " #############################################################################
 " # vim-mutliple-cursor
-if ( filereadable(expand("~/vim/plugged/vim-multiple-cursor/plugin/multiple_cursor.vim")))
-  exe 'source' conf_dir . 'vim-multiple-cursor-conf.vim'
-endif
-
+exe 'source' s:conf_dir . 'vim-multiple-cursor-conf.vim'
 
 endfunction
 
 au VimEnter * call s:configurePlugins()
 
+" #############################################################################
+" # CSyntaxAfter
+autocmd! FileType c,cpp,java,php call CSyntaxAfter()
