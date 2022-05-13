@@ -51,19 +51,17 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'f1reflyyyylmao/Conque-GDB', {'for': ['C/C++'] }
 Plug 'vim-scripts/DoxygenToolkit.vim', { 'for': ['C/C++', 'java', 'python'] }
 Plug 'vim-scripts/copypath.vim'
-Plug 'vim-scripts/Toggle'
-Plug 'vim-scripts/nextval'
-Plug 'vim-scripts/phpfolding.vim'
+Plug 'lukelbd/vim-toggle'
+Plug 'qwertologe/nextval.vim'
 Plug 'vim-scripts/DoxyGen-Syntax'
 Plug 'vim-scripts/vim-svngutter'
 Plug 'vim-scripts/SearchComplete'
 Plug 'vim-scripts/JavaScript-Indent', { 'for': ['javascript']}
 Plug 'vim-scripts/Cpp11-Syntax-Support', {'for': ['C++']}
 Plug 'vim-scripts/cSyntaxAfter', {'for': ['C/C++', 'java', 'php']}
-Plug 'vim-scripts/Indent-Finder', { 'do': 'python22 setup.py install' }
 Plug 'sjl/gundo.vim', {'on': ['GundoToggle', 'GundoHide', 'GundoShow', 'GundoRenderGraph']}
-Plug 'vim-scripts/mycomment'
-Plug 'vim-scripts/grep.vim'
+Plug 'chemzqm/mycomment.vim'
+Plug 'yegappan/grep'
 Plug 'vim-scripts/c.vim', { 'for': 'C/C++' }
 
 " ## Node
@@ -99,6 +97,9 @@ Plug 'Shougo/neosnippet-snippets'
 
 " ## Autocomplete-flow (for deoplete)
  Plug 'wokalski/autocomplete-flow'
+
+" ## Discord
+Plug 'vimsence/vimsence'
 
 " #Themes
 " ## yowish

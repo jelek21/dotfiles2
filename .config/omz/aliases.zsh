@@ -16,6 +16,12 @@ alias :q='exit'
 # git command for the dotfiles git repo
 a config='/usr/bin/git --git-dir=$DOT_FILES_GIT_DIR/ --work-tree=$HOME'
 
+# Set function keys mode for keychron keyboards
+# If you want this setting to be permanent:
+# simply execute the following
+# echo "options hid_apple fnmode=0" | sudo tee -a /etc/modprobe.d/hid_apple.conf
+a enable_keychron='echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode'
+
 #list
 a ls='ls --color=auto'
 a la='ls -a'

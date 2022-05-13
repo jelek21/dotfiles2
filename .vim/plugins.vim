@@ -66,6 +66,10 @@ exe 'source' s:conf_dir . 'fzf-conf.vim'
 exe 'source' s:conf_dir . 'gitgutter-conf.vim'
 
 " #############################################################################
+" # grep
+exe 'source' s:conf_dir . 'grep-conf.vim'
+
+" #############################################################################
 " # Gruvbox theme
 if get(g:, 'colors_name', 'default') == 'gruvbox'
   exe 'source' s:conf_dir . 'gruvbox-conf.vim'
@@ -80,6 +84,10 @@ exe 'source' s:conf_dir . 'gundo-conf.vim'
 exe 'source' s:conf_dir . 'nerdTree-conf.vim'
 
 " #############################################################################
+" # nextval
+exe 'source' s:conf_dir . 'nextval-conf.vim'
+
+" #############################################################################
 " # svnGutter
 exe 'source' s:conf_dir . 'svngutter-conf.vim'
 
@@ -90,6 +98,11 @@ exe 'source' s:conf_dir . 'vim-keeppad-conf.vim'
 " #############################################################################
 " # vim-mutliple-cursor
 exe 'source' s:conf_dir . 'vim-multiple-cursor-conf.vim'
+
+" #############################################################################
+" # vim-toggle
+exe 'source' s:conf_dir . 'vim-toggle-conf.vim'
+
 
 endfunction
 
